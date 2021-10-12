@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<style>
+   body{
+       background-image:url(pexels.jpeg);
+       background-repeat:no-repeat ;
+       background-size: cover;
+}
+
+
+</style>
+
+<body>
+    
+
+    <div class="w-75 m-auto py-4">
+        <p class="h3 text-center">Hi..! </p>
+        <p class="h4 text-center text-primary">
+            Thanks for joining our pre-start competition!
+        </p>
+
+        <div class="form-group">
+            <label for="productName" class="h3">Name :</label>
+            <input type="text" class="form-control" id="name">
+
+        </div>
+        <div class="form-group">
+            <label for="productPrice" class="h3">Phone Number :</label>
+            <input type="number" class="form-control" id="phoneNumber">
+
+        </div>
+
+        <div class="form-group">
+            <label for="questionOne" class="h3">Question 1 :</label>
+            <p class="h4">Define Your Self...</p>
+            <textarea style="resize: none;" type="text" class="form-control" id="questionOne""></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="questionTwo" class="h3">Question 2 :</label>
+            <p class="h4">What is your biggest achievement so far?</p>
+            <textarea style="resize: none;" type="text" class="form-control" id="questionTwo"></textarea>
+
+        </div>
+<div class="text-center">
+        <button onclick="addProduct()" class="btn btn-info ">Submit</button>
+    </div>
+    </div>
+
+
+
+    <table class="table text-center w-75 m-auto py-3">
+        <thead>
+            <th>index</th>
+            <th>Name </th>
+            <th>phone</th>
+            <th>Answer1</th>
+            <th>Answer2</th>
+            <th>delete</th>
+        </thead>
+        <tbody id="tableBody">
+              
+        </tbody>
+
+    </table>
+
+<div class="text-center">
+    <p class="h4">The competition link.., Good Luck..</p> 
+            
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfTqKhk0p3txF69LJQlov2InXa2mLVwN8l9fSfFAvXYK_d9Pg/viewform?usp=sf_link">
+    <button class="btn btn-danger">Start</button>
+    </form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
